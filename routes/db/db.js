@@ -1,4 +1,4 @@
 module.exports = {
-  names: ['a', 'v'],
+  names: [],
   messages: [],
 };

@@ -71,11 +71,9 @@ const wsServer = new WS.Server({ server });
 
 wsServer.on('connection', (ws) => {
   ws.on('message', () => {
-    const { messages } = db;
-    const messagesJson = JSON.stringify(messages);
     [...wsServer.clients]
       .filter((o) => o.readyState === WS.OPEN)
-      .forEach((o) => o.send(messagesJson));
+      .forEach((o) => o.send(JSON.stringify(db)));
   });
 
   // ws.send('welcome');
