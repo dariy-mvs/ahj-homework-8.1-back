@@ -37,7 +37,7 @@
 // });
 
 // app.listen(port, () => console.log('Server is works'));
-
+// старый код сервера.
 const http = require('http');
 const Koa = require('koa');
 const cors = require('@koa/cors');
