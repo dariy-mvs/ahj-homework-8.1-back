@@ -1,3 +1,4 @@
 module.exports = {
-  names: ['a', 'v']
-}
+  names: ['a', 'v'],
+  messages: [],
+};
